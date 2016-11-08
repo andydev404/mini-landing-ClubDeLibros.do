@@ -1,0 +1,29 @@
+.word-color{
+    color:$color1;
+}
+.button{
+   color: white;
+   padding:20px 40px;
+   margin: auto;
+
+}
+.button-primary{
+   background: $color2;
+
+   &:hover{
+       background: darken($color2, 10%);
+       transition: all .3s;
+   }
+}
+.button-radius{
+     border-radius:56px;
+}
+.separator{
+    height:7px;
+    width:100px;
+    background: $color1;
+    margin-bottom: .8em;
+}
+.l-container{
+  max-width: 100%;
+}

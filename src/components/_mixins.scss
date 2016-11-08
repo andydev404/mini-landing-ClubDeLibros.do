@@ -1,0 +1,15 @@
+@mixin desde ($viewport){
+    @media screen and (min-width:$viewport){
+        @content;
+    }
+}
+@mixin hasta ($viewport){
+    @media screen and (max-width:$viewport){
+        @content;
+    }
+}
+@mixin desde-hasta ($viewport1,$viewport2){
+    @media screen and (min-width:$viewport1) and (max-width:$viewport2){
+        @content;
+    }
+}

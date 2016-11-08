@@ -1,0 +1,76 @@
+
+.home-container{
+    background: url('../img/bg-image.jpg')center center no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    
+}
+.home-container::after{
+    content: '';
+    min-height: 100vh;
+    width: 100%;
+    background: $color3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .92;
+    
+}
+.copy-container{
+    position: absolute;
+    z-index: 100;
+    color:white;
+    overflow: hidden;
+    .main-title{
+        font-family: $font-title;
+        font-size:1.4em;
+        text-align: center;
+        margin-top:1.5em;
+        @include desde ($small){
+            font-size:1.6em;
+        }
+        @include desde (480px){
+            font-size: 2em;
+        }
+         @include desde ($medium){
+            font-size:2.8em;
+        }
+    }
+}
+.description-container{
+    margin-left: 1.1em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-text;
+    font-size:.9em;
+    @include desde ($small){
+        font-size:1em;
+    }
+    @include desde (480px){
+            font-size:1.3em;
+    }
+    @include desde ($medium){
+        font-size:1.6em;
+    }
+    .main-title__child{
+       margin-bottom:.3em;
+       font-size: 1.1em;
+    }
+    p{
+        margin-bottom: 1em;
+         line-height: 1.2;
+    }
+    a{
+        text-transform: uppercase;
+        font-family: $font-title;
+        font-size:1em;
+        @include desde ($medium){
+            font-size:1em;
+        }
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+}
+

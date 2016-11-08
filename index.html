@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <title>ClubdeLibros.do | Plataforma virtual para prestamos de Libros</title>
+  <link href="https://file.myfontastic.com/3iDQ2vdo55gfJRkDmnsPuG/icons.css" rel="stylesheet"/>
+  <link href="dist/normalize.css" rel="stylesheet"/>
+  <link href="dist/styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <main>
+    <div class="home-container">
+      <div class="copy-container"> 
+        <h1 class="main-title l-container">Bienvenid@ a Club de Libros.<span class="word-color">do</span></h1>
+        <div class="description-container l-container">
+          <p class="main-title__child">Hola!</p>
+          <p>Queremos contarte nuestra iniciativa para fomentar la lectura en Santo Domingo , Rep.dom. ¿Te animas?...¿Si?. Fantastico!.</p>
+          <div class="separator"></div>
+          <p>Bien, se llama Club de Libros.do trata sobre un sistema de <span class="word-color">donar/prestar</span>  libros en donde tu tanto como otras personas puedan <span class="word-color">leer , compartir y aprender</span> temas de interes  y incluso conocer personas con tus mismos gustos de lectura!.</p>
+          <p>Estamos en fase <span class="word-underline">'Beta'</span> de la aplicación , si te gustó la idea y deseas participar en esta aventura con nosotros, pulsa el boton registrar y llena el formulario.</p><a href="#registry" title="title" id="register-button" class="button button-primary button-radius">registrarme</a>
+        </div>
+      </div>
+    </div>
+    <div id="registry" class="registry-container hide l-container">
+      <div class="form-container">
+        <div class="title-container">
+          <h2 class="title-container__child">Club de Libros.<span class="word-color">do</span></h2>
+        </div>
+        <div class="icon-container"><img src="img/user-reader.png" alt="icon-ClubdeLibros"/></div>
+        <div class="data-form">
+          <form action="">
+            <label for="username">Nombre</label>
+            <input type="text" id="username" name="username" placeholder="Tu nombre" class="input-form"/>
+            <label for="correo" name="correo">Email</label>
+            <input type="email" id="email" placeholder="ejemplo@gmail.com" class="input-form"/>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Tu contraseña" class="input-form form-input-49"/>
+            <label for="password" class="form-label">Confirmar Contraseña</label>
+            <input type="password" id="password" name="password" class="input-form form-input-50"/>
+            <input type="submit" value="Registrar" class="form-submit"/>
+          </form>
+          <div class="footer-form">
+            <p class="register-title">Registrarme con: </p><span class="facebook"><a href="#" class="icon-facebook"></a></span><span class="google-plus"><a href="#" class="icon-google-plus"></a></span>
+          </div>
+          <p class="info-copy">Tus datos no seran mostrados a ningun otro usuario.Estos estarán registrados en nuestra base de datos para fines de servicios de la plataforma.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/scripts.js"></script>
+</body>

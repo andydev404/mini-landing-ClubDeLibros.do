@@ -1,0 +1,31 @@
+//Paleta de Colores
+$color1 : #00CCFF;
+$color2 : #2DA896;
+$color3 : #00222B;
+$color4 : #ffffff;      
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+//Oswald para los titulos
+$font-title: 'Oswald', sans-serif;
+//Open Sans para los textos
+$font-text: 'Open Sans', sans-serif; 
+
+//imagen de Fondo en home
+$bg-image: '../img/bg-image.jpg'; 
+
+//layaout
+$max-width: 1200px;
+
+//Breakpoints
+$x-small: 320px;
+$small: 360px;
+$medium:768px;
+$large:1280px;
+//Imports
+@import "../components/base";
+@import "../components/mixins";   
+@import "../components/home";
+@import "../components/formulary";
+@import "../components/modules";            

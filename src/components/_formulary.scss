@@ -1,0 +1,188 @@
+.registry-container{
+    background-color: $color2;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    background: $color4;
+    width: 90%;
+    @include desde ($medium){
+        width: 70%;
+    } 
+    @include desde ($large){
+        width: 40%;
+    }
+    .data-form{
+        padding: 0 1.20em;
+        form{
+            margin-top:-.5em;
+            label{
+                display: block;
+                 font-family: $font-title;
+                 font-size: 1.1em;
+                 @include desde ($small){
+                    font-size: 1.2em;
+                 }
+                 font-weight: 300;
+                 margin-bottom: .3em; 
+
+            }
+            .input-form{
+                margin-bottom: .3em;
+                width: 100%;
+                @include desde($medium){
+                    line-height: 1.5;
+                }
+            }
+            @include desde($medium){
+                .form-input-49{
+                display:inline-block;
+                width: 49%;
+                margin-right:.3em;
+                }
+                .form-input-50{
+                        display: inline-block;
+                        width: 49%;
+                        position: relative;
+                    }
+                    .form-label{
+                        display: inline-block;
+                        position:absolute;
+                        margin-top: -1.45em;
+                    }
+            }
+            @include desde (840px){
+                .form-input-50{
+                       width: 49.30%;
+                    }
+            }
+            @include desde-hasta (960px,1279px){
+                    .form-input-50{
+                       width: 49.50%;
+                    }
+            }
+            @include desde($large){
+                .form-input-48{
+                        margin-right:.2em;
+                    
+                    }
+                .form-input-50{
+                       width: 49%;
+                    }
+            }
+            
+        }
+    }
+}
+ 
+/*Place-holder font-change*/
+::-webkit-input-placeholder { font-family: $font-title; font-weight: 300;}
+::-moz-placeholder { font-family: $font-title; font-weight: 300; } /* firefox 19+ */
+:-ms-input-placeholder { font-family: $font-title; font-weight: 300;} /* ie */
+input:-moz-placeholder { font-family: $font-title; font-weight: 300; }
+
+.title-container{
+    background: $color3;
+    height: 2.5rem;
+
+    .title-container__child{
+        text-align: center;
+        line-height:  2.5rem;
+        color: $color4;
+        font-size:1.4em;
+        font-family: $font-title;
+    }
+}
+.icon-container{
+    text-align: center;
+    margin-top: .8em;
+    img{
+        width: 22%;
+
+        @include desde ($medium){
+            width: 15.8%;
+        }
+        @include desde ($large){
+            width: 14%;
+        }
+    }
+}
+.form-submit{ 
+    margin:.5em auto 0;
+    background: $color2;
+    line-height: 2;
+    color:white;
+    border: 0;
+    border-radius:3px;
+    box-shadow: 0 4px 2px darken($color: $color2, $amount: 20);
+    font-family: $font-text;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+     &:hover{
+        background: darken($color2, 10%);
+        transition: all .3s;
+        }
+    @include desde ($small){
+        line-height: 3;
+    }
+    @include desde($medium){
+        width: 40%;
+            
+    }
+}
+.footer-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-top: .8em; 
+}
+.register-title{
+    font-family: $font-title;
+    font-weight: 300;
+    margin-right: .5em;
+    @include desde($medium){
+        font-size:1.2em;
+    }
+
+}
+.register-title,.facebook , .google-plus{
+           display: inline-block;
+            
+}
+.facebook,.google-plus{
+     border-radius:2px;
+    border: 1px solid $color2;
+    padding: 0 20px;
+    margin:1%;
+    background: $color2;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-facebook:before,.icon-google-plus:before{
+    color:$color4;
+    position: relative;
+    top:2px;
+}
+.info-copy{
+    text-align: center;
+    font-size: .6em;
+    margin-top: .8em;
+    margin-bottom: .5em;
+    font-family: $font-text;
+    @include desde($medium){
+        margin-bottom: 2em;
+         font-size: .7em;
+        opacity: .8;
+    }
+    
+}
+.hide{
+    display: none;
+}
